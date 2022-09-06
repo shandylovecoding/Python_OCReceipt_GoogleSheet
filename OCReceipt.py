@@ -1,8 +1,8 @@
-import requests
+# import requests
+# import json
+
 import os
 from os import listdir
-import json
-import pillow_heif 
 from pillow_heif import register_heif_opener
 
 import gspread
@@ -10,18 +10,10 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 from PIL import Image
 import pytesseract
-import argparse
 import cv2
 import os
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-import numpy as np
-import csv
-import nltk
 import re
-from nltk.tokenize import word_tokenize
-from nltk.corpus import wordnet 
+
 
 scope = ['https://www.googleapis.com/auth/spreadsheets', "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
 
